@@ -18,4 +18,4 @@ dependencies = [
 [project.urls]
 Homepage = "https://seminara.online"
 Documentation = "https://seminara.online/docs"
-Repository = "https://github.com/shivamselam/seminara-ai"
+Repository = "https://github.com/shivamselam/seminara-sdk"
