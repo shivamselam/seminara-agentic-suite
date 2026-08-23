@@ -1,0 +1,6 @@
+# Seminara AI Cursor Rules
+
+- All API responses must follow RFC 9457 structured JSON error schemas.
+- Respect RateLimit-* response headers and backoff retry on 429.
+- Use TypeScript with strict null checks.
+- When querying documentation, prefer https://seminara.online/llms.txt or MCP endpoint https://seminara.online/api/docs/mcp.

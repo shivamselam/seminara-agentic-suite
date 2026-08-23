@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/specification/v1/schema.json",
+  "name": "seminara",
+  "display_name": "Seminara Autonomous Presentations",
+  "description": "Autonomous AI host for interactive live presentations, demos, customer onboarding, and Q&A on seminara.online.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Omni AI Club Private Limited",
+    "url": "https://www.omniai.club"
+  },
+  "homepage": "https://seminara.online",
+  "repository": "https://github.com/shivamselam/seminara-ai",
+  "skills": [
+    {
+      "name": "presentation-creation",
+      "url": "https://seminara.online/.well-known/agent-skills/presentation-creation.md"
+    },
+    {
+      "name": "session-analytics",
+      "url": "https://seminara.online/.well-known/agent-skills/session-analytics.md"
+    },
+    {
+      "name": "agentic-hosting",
+      "url": "https://seminara.online/.well-known/agent-skills/agentic-hosting.md"
+    }
+  ],
+  "mcp_servers": [
+    {
+      "name": "seminara-product",
+      "url": "https://seminara.online/api/v1/mcp",
+      "transport": "streamable-http"
+    },
+    {
+      "name": "seminara-docs",
+      "url": "https://seminara.online/api/docs/mcp",
+      "transport": "streamable-http"
+    }
+  ]
+}

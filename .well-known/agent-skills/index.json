@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "presentation-creation",
+      "type": "skill-md",
+      "description": "Create and configure automated interactive AI presentation sessions with slides, audio host, and conversion CTAs on seminara.online.",
+      "url": "https://seminara.online/.well-known/agent-skills/presentation-creation.md",
+      "digest": "sha256:2759cb30a3b0472ceb11e3c0cf95d7608055bcaa46e264c9cf01298318eda984"
+    },
+    {
+      "name": "session-analytics",
+      "type": "skill-md",
+      "description": "Retrieve audience engagement metrics, Q&A logs, and conversion lead captures from live presentation sessions on seminara.online.",
+      "url": "https://seminara.online/.well-known/agent-skills/session-analytics.md",
+      "digest": "sha256:1e4d2489f51a41dfa411e8fc2a4d40e49ef66c06ea66b60ee58b7c709f5ce338"
+    },
+    {
+      "name": "agentic-hosting",
+      "type": "skill-md",
+      "description": "Manage 24/7 autonomous presentation delivery, live Q&A handling, and dynamic knowledge base retrieval on seminara.online.",
+      "url": "https://seminara.online/.well-known/agent-skills/agentic-hosting.md",
+      "digest": "sha256:cff6328b09ab7793676ff42949cd30dc55a88b31fd8cab007569d9559de3f274"
+    }
+  ]
+}
