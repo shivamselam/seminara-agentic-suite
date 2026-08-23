@@ -1,0 +1,26 @@
+{
+  "name": "@seminara/sdk",
+  "version": "1.0.0",
+  "description": "Official TypeScript and JavaScript SDK for Seminara AI interactive presentation platform (seminara.online)",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shivamselam/seminara-ai.git"
+  },
+  "homepage": "https://seminara.online",
+  "keywords": [
+    "seminara",
+    "ai-presenter",
+    "presentations",
+    "mcp",
+    "agentic",
+    "sdk"
+  ],
+  "author": "Shivam Selam <shivamselam@seminara.online>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  }
+}

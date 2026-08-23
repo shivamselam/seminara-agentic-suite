@@ -1,0 +1,22 @@
+{
+  "name": "seminara-cli",
+  "version": "1.0.0",
+  "description": "Official Command-Line Interface for Seminara AI interactive presentation platform (seminara.online)",
+  "bin": {
+    "seminara": "./bin/seminara.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shivamselam/seminara-ai.git"
+  },
+  "homepage": "https://seminara.online",
+  "keywords": [
+    "seminara",
+    "cli",
+    "ai-presenter",
+    "presentations",
+    "terminal"
+  ],
+  "author": "Shivam Selam <shivamselam@seminara.online>",
+  "license": "MIT"
+}
