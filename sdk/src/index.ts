@@ -3,6 +3,8 @@
  * Autonomous AI Host for Live Presentations, Demos & Onboarding.
  */
 
+declare const process: any
+
 export interface SeminaraClientOptions {
   apiKey?: string
   baseUrl?: string
@@ -44,7 +46,8 @@ export class Seminara {
   private baseUrl: string
 
   constructor(options: SeminaraClientOptions = {}) {
-    this.apiKey = options.apiKey || process.env.SEMINARA_API_KEY || ''
+    const envKey = typeof process !== 'undefined' && process.env ? process.env.SEMINARA_API_KEY : undefined
+    this.apiKey = options.apiKey || envKey || ''
     this.baseUrl = options.baseUrl || 'https://seminara.online/api/v1'
   }
 

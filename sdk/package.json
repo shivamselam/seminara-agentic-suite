@@ -1,5 +1,5 @@
 {
-  "name": "@seminara/sdk",
+  "name": "seminara-sdk",
   "version": "1.0.0",
   "description": "Official TypeScript and JavaScript SDK for Seminara AI interactive presentation platform (seminara.online)",
   "main": "dist/index.js",
