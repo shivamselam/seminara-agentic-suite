@@ -4,12 +4,13 @@
   "display_name": "Seminara Autonomous Presentations",
   "description": "Autonomous AI host for interactive live presentations, demos, customer onboarding, and Q&A on seminara.online.",
   "version": "1.0.0",
+  "category": "AI Presentations & Developer Infrastructure",
   "author": {
     "name": "Omni AI Club Private Limited",
     "url": "https://www.omniai.club"
   },
   "homepage": "https://seminara.online",
-  "repository": "https://github.com/shivamselam/seminara-ai",
+  "repository": "https://github.com/shivamselam/seminara-sdk",
   "skills": [
     {
       "name": "presentation-creation",
