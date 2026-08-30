@@ -39,3 +39,9 @@ class Seminara:
         response = httpx.get("https://seminara.online/api/pricing")
         response.raise_for_status()
         return response.json()
+
+# Alias for backwards compatibility & consistency
+SeminaraClient = Seminara
+
+__all__ = ["Seminara", "SeminaraClient"]
+

@@ -2,6 +2,7 @@ package seminara
 
 import (
 	"bytes"
+	"context"
 	"encoding/json"
 	"fmt"
 	"net/http"
@@ -31,6 +32,7 @@ type CreateSessionRequest struct {
 	IsLive      bool   `json:"isLive,omitempty"`
 	CtaText     string `json:"ctaText,omitempty"`
 	CtaURL      string `json:"ctaUrl,omitempty"`
+	PdfURL      string `json:"pdfUrl,omitempty"`
 }
 
 type SessionResponse struct {
@@ -41,12 +43,16 @@ type SessionResponse struct {
 }
 
 func (c *Client) CreateSession(req CreateSessionRequest) (*SessionResponse, error) {
+	return c.CreateSessionWithContext(context.Background(), req)
+}
+
+func (c *Client) CreateSessionWithContext(ctx context.Context, req CreateSessionRequest) (*SessionResponse, error) {
 	body, err := json.Marshal(req)
 	if err != nil {
 		return nil, err
 	}
 
-	httpReq, err := http.NewRequest("POST", c.BaseURL+"/agent/sessions", bytes.NewBuffer(body))
+	httpReq, err := http.NewRequestWithContext(ctx, "POST", c.BaseURL+"/agent/sessions", bytes.NewBuffer(body))
 	if err != nil {
 		return nil, err
 	}

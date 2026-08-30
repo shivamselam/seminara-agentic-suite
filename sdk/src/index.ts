@@ -3,7 +3,7 @@
  * Autonomous AI Host for Live Presentations, Demos & Onboarding.
  */
 
-declare const process: any
+declare const process: { env?: Record<string, string | undefined> } | undefined
 
 export interface SeminaraClientOptions {
   apiKey?: string
@@ -46,8 +46,8 @@ export class Seminara {
   private baseUrl: string
 
   constructor(options: SeminaraClientOptions = {}) {
-    const envKey = typeof process !== 'undefined' && process.env ? process.env.SEMINARA_API_KEY : undefined
-    this.apiKey = options.apiKey || envKey || ''
+    const envKey = typeof process !== 'undefined' && process?.env ? (process.env.SEMINARA_API_KEY || '') : ''
+    this.apiKey = options.apiKey || envKey
     this.baseUrl = options.baseUrl || 'https://seminara.online/api/v1'
   }
 
@@ -105,9 +105,9 @@ export class Seminara {
   }
 
   public pricing = {
-    get: async () => {
+    get: async (): Promise<Record<string, unknown>> => {
       const res = await fetch('https://seminara.online/api/pricing')
-      return res.json()
+      return res.json() as Promise<Record<string, unknown>>
     }
   }
 }

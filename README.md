@@ -1,94 +1,127 @@
-# Seminara SDK & CLI Suite
+<div align="center">
+  <h1>Seminara Agentic Suite</h1>
+  <p><strong>Now your AI agents can autonomously host live presentations for you.</strong></p>
+  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![NPM Package](https://img.shields.io/npm/v/seminara-sdk.svg?color=blue)](https://www.npmjs.com/package/seminara-sdk)
+  [![PyPI Package](https://img.shields.io/pypi/v/seminara.svg?color=blue)](https://pypi.org/project/seminara/)
+  [![MCP Compatible](https://img.shields.io/badge/MCP-2026--07--28-emerald.svg)](https://seminara.online/api/v1/mcp)
+  
+  <br />
+  <a href="https://seminara.online/live/demo"><strong>View Live Interactive Demo »</strong></a>
+  ·
+  <a href="https://seminara.online/docs/api-overview"><strong>API Reference »</strong></a>
+  ·
+  <a href="https://seminara.online"><strong>Seminara Platform »</strong></a>
+  <br />
+  <br />
+</div>
 
-Official open-source client SDKs and developer tooling for **Seminara** ([seminara.online](https://seminara.online)).
+## The Presentation Layer for AI Agents
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Version](https://img.shields.io/badge/API-v1-blue.svg)](https://seminara.online/docs/api-overview)
-[![MCP Compatible](https://img.shields.io/badge/MCP-2026--07--28-emerald.svg)](https://seminara.online/docs/mcp)
+Seminara is an autonomous, 24/7 WebRTC presentation host (Aura) that delivers interactive slide decks and fields live audience Q&A.
+
+With the **Seminara Agentic Suite**, this core engine is now fully programmable. You or your autonomous agents can orchestrate live, voice-led presentations entirely through code using our WebMCP integration, CLI, or multi-language SDKs.
 
 ---
 
-## 📦 Available Packages
+## 📦 Available Packages & Tools
 
-| Package | Language / Tool | Directory | Installation |
+| Package / Tool | Language | Directory | Installation |
 | :--- | :--- | :--- | :--- |
-| **`@seminara/sdk`** | TypeScript / JavaScript | [`sdk/`](./sdk) | `npm install @seminara/sdk` |
-| **`seminara-cli`** | Command Line Tool | [`cli/`](./cli) | `npm install -g seminara-cli` |
+| **`seminara-sdk`** | TypeScript / JavaScript | [`sdk/`](./sdk) | `npm install seminara-sdk` |
 | **`seminara`** | Python 3.9+ | [`python/`](./python) | `pip install seminara` |
-| **`seminara-go`** | Go 1.21+ | [`go/`](./go) | `go get github.com/shivamselam/seminara-sdk/go` |
+| **`seminara-cli`** | Command Line CLI | [`cli/`](./cli) | `npm install -g seminara-cli` |
+| **`go`** | Go 1.21+ | [`go/`](./go) | `go get github.com/shivamselam/seminara-agentic-suite/go` |
 
 ---
 
-## 🚀 TypeScript / JavaScript Quickstart
+## 🚀 Quickstarts: Time to Hello World < 5 Minutes
 
+### 1. Node.js / TypeScript
 ```bash
-npm install @seminara/sdk
+npm install seminara-sdk
 ```
 
 ```typescript
-import { SeminaraClient } from '@seminara/sdk'
+import { Seminara } from 'seminara-sdk';
 
-const client = new SeminaraClient({
-  apiKey: process.env.SEMINARA_API_KEY, // sk_live_...
-})
+const client = new Seminara({ apiKey: process.env.SEMINARA_API_KEY });
 
-// Create an interactive presentation session
+// Instantly generate a live, AI-hosted presentation room
 const session = await client.sessions.create({
-  title: 'Q3 Enterprise Product Walkthrough',
-  isLive: true,
-  ctaText: 'Schedule Technical Demo',
-  ctaUrl: 'https://cal.com/enterprise-sales',
-})
+  title: "Q3 Enterprise Demo & Discovery",
+  pdfUrl: "https://example.com/pitch-deck.pdf",
+  knowledgeBase: [
+    { title: "Pricing", content: "Core Host plan is $199/mo for 50 presentations." }
+  ],
+  ctaText: "Book Architecture Review",
+  ctaUrl: "https://seminara.online/book-meeting"
+});
 
-console.log(`Live Session URL: ${session.liveUrl}`)
+console.log(`Live Session URL: ${session.liveLink}`);
 ```
 
----
+### 2. Python
+```bash
+pip install seminara
+```
 
-## 💻 CLI Usage
+```python
+import os
+from seminara import SeminaraClient
 
+client = SeminaraClient(api_key=os.environ.get("SEMINARA_API_KEY"))
+
+session = client.create_session(
+    title="Q3 Enterprise Demo & Discovery",
+    is_live=True,
+    pdf_url="https://example.com/pitch-deck.pdf",
+    knowledge_base=[
+        {"title": "Pricing", "content": "Core Host plan is $199/mo for 50 presentations."}
+    ],
+    cta_text="Book Architecture Review",
+    cta_url="https://seminara.online/book-meeting"
+)
+
+print(f"Live Session Created: {session['liveLink']}")
+```
+
+### 3. Command Line (CLI)
 ```bash
 npm install -g seminara-cli
 
-# Authenticate
-seminara auth login
+# Set your API key
+export SEMINARA_API_KEY="sk_live_..."
 
-# Create a presentation
-seminara sessions create --title "Product Demo" --live
+# Create a presentation room straight from your terminal
+seminara create --title "Q3 Product Launch"
 
-# List active sessions
-seminara sessions list
+# List active rooms
+seminara list
 ```
 
 ---
 
-## 🐍 Python Quickstart
+## 🤖 Model Context Protocol (MCP) & WebMCP
 
-```python
-from seminara import SeminaraClient
+Seminara natively exposes its presentation engine to autonomous agents via MCP:
 
-client = SeminaraClient(api_key="sk_live_...")
+- **Core Product MCP Server:** `https://seminara.online/api/v1/mcp`
+- **Documentation MCP Server:** `https://seminara.online/api/docs/mcp`
+- **Discovery Catalog:** `https://seminara.online/.well-known/api-catalog.json`
 
-session = client.sessions.create(
-    title="Investor Pitch Rehearsal",
-    is_live=True
-)
-
-print(f"Session created: {session.id}")
-```
+*If you navigate to `https://seminara.online` using a WebMCP-enabled browser, your agent will automatically discover the exposed presentation tools on page load.*
 
 ---
 
-## 📖 Developer Documentation
-
-- **Documentation Center**: [https://seminara.online/docs](https://seminara.online/docs)
+## 📖 Documentation & Resources
+- **Developer Documentation**: [https://seminara.online/docs](https://seminara.online/docs)
 - **API Reference**: [https://seminara.online/docs/api-overview](https://seminara.online/docs/api-overview)
-- **Model Context Protocol (MCP)**: [https://seminara.online/docs/mcp](https://seminara.online/docs/mcp)
-- **Agent Rules (AGENTS.md)**: [https://seminara.online/llms.txt](https://seminara.online/llms.txt)
+- **OpenAPI 3.1 Spec**: [https://seminara.online/openapi.json](https://seminara.online/openapi.json)
+- **Developer Index (llms.txt)**: [https://seminara.online/llms.txt](https://seminara.online/llms.txt)
 
 ---
 
 ## 📄 License
-
-This open-source SDK and CLI suite is released under the [MIT License](./LICENSE).  
-Copyright (c) 2026 Shivam Selam / Omni AI Club Private Limited.
+MIT License. Copyright (c) 2026 Shivam Selam / Omni AI Club Private Limited.

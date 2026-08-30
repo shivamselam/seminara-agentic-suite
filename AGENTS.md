@@ -30,8 +30,8 @@ Welcome, AI agent! This repository contains the public specifications, MCP inter
 ---
 
 ## 4. Public Repository & Agent Configs
-- **Official GitHub Repository**: [https://github.com/shivamselam/seminara-ai](https://github.com/shivamselam/seminara-ai)
-- **Agent Rules**: [https://github.com/shivamselam/seminara-ai/blob/main/AGENTS.md](https://github.com/shivamselam/seminara-ai/blob/main/AGENTS.md)
-- **Agent Plugins Manifest**: [https://github.com/shivamselam/seminara-ai/blob/main/public/.well-known/plugin.json](https://github.com/shivamselam/seminara-ai/blob/main/public/.well-known/plugin.json)
-- **Cursor Rules**: [https://github.com/shivamselam/seminara-ai/blob/main/.cursorrules](https://github.com/shivamselam/seminara-ai/blob/main/.cursorrules)
+- **Official GitHub Repository**: [https://github.com/shivamselam/seminara-agentic-suite](https://github.com/shivamselam/seminara-agentic-suite)
+- **Agent Rules**: [https://github.com/shivamselam/seminara-agentic-suite/blob/main/AGENTS.md](https://github.com/shivamselam/seminara-agentic-suite/blob/main/AGENTS.md)
+- **Agent Plugins Manifest**: [https://github.com/shivamselam/seminara-agentic-suite/blob/main/public/.well-known/plugin.json](https://github.com/shivamselam/seminara-agentic-suite/blob/main/public/.well-known/plugin.json)
+- **Cursor Rules**: [https://github.com/shivamselam/seminara-agentic-suite/blob/main/.cursorrules](https://github.com/shivamselam/seminara-agentic-suite/blob/main/.cursorrules)
 

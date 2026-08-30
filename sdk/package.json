@@ -7,7 +7,7 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shivamselam/seminara-sdk.git"
+    "url": "https://github.com/shivamselam/seminara-agentic-suite.git"
   },
   "homepage": "https://seminara.online",
   "keywords": [
@@ -19,8 +19,12 @@
     "sdk"
   ],
   "author": "Shivam Selam <shivamselam@seminara.online>",
-  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   }
 }
