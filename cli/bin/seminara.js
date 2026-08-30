@@ -12,8 +12,12 @@ const args = process.argv.slice(2)
 const command = args[0]
 
 async function main() {
-  const apiKey = process.env.SEMINARA_API_KEY
-  const baseUrl = process.env.SEMINARA_API_URL || 'https://seminara.online/api/v1'
+  const keyIdx = args.indexOf('--key')
+  const apiKey = keyIdx !== -1 && args[keyIdx + 1] ? args[keyIdx + 1] : process.env.SEMINARA_API_KEY
+  let baseUrl = process.env.SEMINARA_API_URL || 'https://seminara.online/api/v1'
+  if (!baseUrl.startsWith('https://') && !baseUrl.startsWith('http://localhost') && !baseUrl.startsWith('http://127.0.0.1')) {
+    baseUrl = baseUrl.replace(/^http:\/\//i, 'https://')
+  }
 
   if (!command || command === 'help' || command === '--help') {
     console.log(`

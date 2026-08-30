@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"time"
 )
 
 type Client struct {
@@ -22,7 +23,9 @@ func NewClient(apiKey string) *Client {
 	return &Client{
 		APIKey:     apiKey,
 		BaseURL:    "https://seminara.online/api/v1",
-		HTTPClient: &http.Client{},
+		HTTPClient: &http.Client{
+			Timeout: 30 * time.Second,
+		},
 	}
 }
 

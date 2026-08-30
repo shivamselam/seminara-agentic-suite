@@ -8,7 +8,7 @@ version = "1.0.0"
 description = "Official Python SDK for Seminara AI interactive presentation platform (seminara.online)"
 readme = "README.md"
 authors = [{ name = "Shivam Selam", email = "shivamselam@seminara.online" }]
-license = { text = "MIT" }
+license = "MIT"
 keywords = ["seminara", "ai-presenter", "presentation", "agentic", "mcp"]
 dependencies = [
     "httpx>=0.24.0",
