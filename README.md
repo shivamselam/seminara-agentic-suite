@@ -15,6 +15,9 @@
   <a href="https://seminara.online"><strong>Seminara Platform »</strong></a>
   <br />
   <br />
+  <img src="./assets/workflow.png" alt="Seminara Agentic Suite Architecture" width="100%" />
+  <br />
+  <br />
 </div>
 
 ## The Presentation Layer for AI Agents
