@@ -107,15 +107,25 @@ seminara list
 
 ---
 
-## 🤖 Model Context Protocol (MCP) & WebMCP
+## 🤖 Model Context Protocol (MCP) & AI Connectors
 
-Seminara natively exposes its presentation engine to autonomous agents via MCP:
+Seminara natively exposes its presentation engine across the entire agent ecosystem:
 
 - **Core Product MCP Server:** `https://seminara.online/api/v1/mcp`
 - **Documentation MCP Server:** `https://seminara.online/api/docs/mcp`
+- **OpenAPI 3.1 Spec (ChatGPT / Custom GPTs):** `https://seminara.online/openapi.json`
 - **Discovery Catalog:** `https://seminara.online/.well-known/api-catalog.json`
 
-### Quick Connect: Claude Desktop (`claude_desktop_config.json`)
+### 1-Click Install via Smithery CLI
+Installs automatically into **Claude Desktop, Cursor, Windsurf, Cline, Zed**, and more:
+```bash
+npx -y @smithery/cli install @seminara/autonomous-host
+```
+*(Or specify client directly: `--client claude`, `--client cursor`, `--client windsurf`, `--client cline`)*
+
+### Quick Connect Configurations
+
+#### Claude Desktop (`claude_desktop_config.json`)
 ```json
 {
   "mcpServers": {
@@ -130,7 +140,7 @@ Seminara natively exposes its presentation engine to autonomous agents via MCP:
 }
 ```
 
-### Quick Connect: Cursor (`.cursor/mcp.json`)
+#### Cursor & Windsurf (`.cursor/mcp.json` or `mcp_config.json`)
 ```json
 {
   "mcpServers": {
@@ -142,12 +152,13 @@ Seminara natively exposes its presentation engine to autonomous agents via MCP:
 }
 ```
 
-### 1-Click Install via Smithery
-```bash
-npx -y @smithery/cli install @seminara/autonomous-host --client claude
-```
+#### ChatGPT / OpenAI Custom GPTs (Actions)
+1. In your GPT configuration, go to **Actions** → **Create new action**.
+2. Click **Import from URL** and paste: `https://seminara.online/openapi.json`
+3. Under Authentication, select **Bearer** and provide your API key.
 
-*If you navigate to `https://seminara.online` using a WebMCP-enabled browser, your agent will automatically discover the exposed presentation tools on page load.*
+#### WebMCP (In-Browser Agents)
+If you navigate to `https://seminara.online` using a WebMCP-enabled browser, your agent will automatically discover the exposed presentation tools on page load.
 
 ---
 
