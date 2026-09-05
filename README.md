@@ -6,6 +6,7 @@
   [![NPM Package](https://img.shields.io/npm/v/seminara-sdk.svg?color=blue)](https://www.npmjs.com/package/seminara-sdk)
   [![PyPI Package](https://img.shields.io/pypi/v/seminara.svg?color=blue)](https://pypi.org/project/seminara/)
   [![MCP Compatible](https://img.shields.io/badge/MCP-2026--07--28-emerald.svg)](https://seminara.online/api/v1/mcp)
+  [![smithery badge](https://smithery.ai/badge/seminara/autonomous-host)](https://smithery.ai/servers/seminara/autonomous-host)
   
   <br />
   <a href="https://seminara.online/live/demo"><strong>View Live Interactive Demo »</strong></a>
@@ -143,7 +144,7 @@ Seminara natively exposes its presentation engine to autonomous agents via MCP:
 
 ### 1-Click Install via Smithery
 ```bash
-npx -y @smithery/cli install @shivamselam/seminara --client claude
+npx -y @smithery/cli install @seminara/autonomous-host --client claude
 ```
 
 *If you navigate to `https://seminara.online` using a WebMCP-enabled browser, your agent will automatically discover the exposed presentation tools on page load.*
