@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.shivamselam/seminara",
+  "title": "Seminara",
+  "description": "Digital Teammate (Aura) hosting live interactive presentations, demos, and audience Q&A 24/7.",
+  "repository": {
+    "url": "https://github.com/shivamselam/seminara-agentic-suite",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "icons": [
+    {
+      "src": "https://seminara.online/icon.png",
+      "mimeType": "image/png"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://seminara.online/api/v1/mcp"
+    },
+    {
+      "type": "sse",
+      "url": "https://seminara.online/api/v1/mcp"
+    }
+  ]
+}

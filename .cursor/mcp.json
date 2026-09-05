@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "seminara": {
+      "type": "sse",
+      "url": "https://seminara.online/api/v1/mcp"
+    }
+  }
+}

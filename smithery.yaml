@@ -1,0 +1,12 @@
+# Smithery configuration for Seminara AI Model Context Protocol (MCP) Server
+startCommand:
+  type: "http"
+  url: "https://seminara.online/api/v1/mcp"
+
+configSchema:
+  type: "object"
+  properties:
+    apiKey:
+      type: "string"
+      title: "Seminara API Key"
+      description: "Bearer API key (sk_live_...) from https://seminara.online/dashboard/settings (optional for public discovery, required for creating sessions)"

@@ -114,6 +114,38 @@ Seminara natively exposes its presentation engine to autonomous agents via MCP:
 - **Documentation MCP Server:** `https://seminara.online/api/docs/mcp`
 - **Discovery Catalog:** `https://seminara.online/.well-known/api-catalog.json`
 
+### Quick Connect: Claude Desktop (`claude_desktop_config.json`)
+```json
+{
+  "mcpServers": {
+    "seminara": {
+      "type": "sse",
+      "url": "https://seminara.online/api/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer sk_live_your_key_here"
+      }
+    }
+  }
+}
+```
+
+### Quick Connect: Cursor (`.cursor/mcp.json`)
+```json
+{
+  "mcpServers": {
+    "seminara": {
+      "type": "sse",
+      "url": "https://seminara.online/api/v1/mcp"
+    }
+  }
+}
+```
+
+### 1-Click Install via Smithery
+```bash
+npx -y @smithery/cli install @shivamselam/seminara --client claude
+```
+
 *If you navigate to `https://seminara.online` using a WebMCP-enabled browser, your agent will automatically discover the exposed presentation tools on page load.*
 
 ---
