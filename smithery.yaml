@@ -1,4 +1,6 @@
 # Smithery configuration for Seminara AI Model Context Protocol (MCP) Server
+# Standard Discovery: https://seminara.online/.well-known/mcp
+# Rehearsal & Sandbox: https://seminara.online/sandbox
 startCommand:
   type: "http"
   url: "https://seminara.online/api/v1/mcp"

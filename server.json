@@ -17,7 +17,15 @@
   "remotes": [
     {
       "type": "streamable-http",
+      "url": "https://seminara.online/.well-known/mcp"
+    },
+    {
+      "type": "streamable-http",
       "url": "https://seminara.online/api/v1/mcp"
+    },
+    {
+      "type": "sse",
+      "url": "https://seminara.online/.well-known/mcp"
     },
     {
       "type": "sse",

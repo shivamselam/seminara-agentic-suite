@@ -1,5 +1,7 @@
 # Seminara Go SDK
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/shivamselam/seminara-agentic-suite/go.svg)](https://pkg.go.dev/github.com/shivamselam/seminara-agentic-suite/go)
+
 Official Go client library for [Seminara](https://seminara.online) (`seminara.online`).
 
 ## Installation

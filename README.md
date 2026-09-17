@@ -5,11 +5,14 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![NPM Package](https://img.shields.io/npm/v/seminara-sdk.svg?color=blue)](https://www.npmjs.com/package/seminara-sdk)
   [![PyPI Package](https://img.shields.io/pypi/v/seminara.svg?color=blue)](https://pypi.org/project/seminara/)
+  [![Go Reference](https://pkg.go.dev/badge/github.com/shivamselam/seminara-agentic-suite/go.svg)](https://pkg.go.dev/github.com/shivamselam/seminara-agentic-suite/go)
   [![MCP Compatible](https://img.shields.io/badge/MCP-2026--07--28-emerald.svg)](https://seminara.online/api/v1/mcp)
   [![smithery badge](https://smithery.ai/badge/seminara/autonomous-host)](https://smithery.ai/servers/seminara/autonomous-host)
   
   <br />
   <a href="https://seminara.online/live/demo"><strong>View Live Interactive Demo »</strong></a>
+  ·
+  <a href="https://seminara.online/sandbox"><strong>Interactive Sandbox »</strong></a>
   ·
   <a href="https://seminara.online/docs/api-overview"><strong>API Reference »</strong></a>
   ·
@@ -36,7 +39,7 @@ With the **Seminara Agentic Suite**, this core engine is now fully programmable.
 | **`seminara-sdk`** | TypeScript / JavaScript | [`sdk/`](./sdk) | `npm install seminara-sdk` |
 | **`seminara`** | Python 3.9+ | [`python/`](./python) | `pip install seminara` |
 | **`seminara-cli`** | Command Line CLI | [`cli/`](./cli) | `npm install -g seminara-cli` |
-| **`go`** | Go 1.21+ | [`go/`](./go) | `go get github.com/shivamselam/seminara-agentic-suite/go` |
+| **`go`** | Go 1.21+ | [`go/`](./go) | `go get github.com/shivamselam/seminara-agentic-suite/go` <br /> [![Go Reference](https://pkg.go.dev/badge/github.com/shivamselam/seminara-agentic-suite/go.svg)](https://pkg.go.dev/github.com/shivamselam/seminara-agentic-suite/go) |
 
 ---
 
@@ -111,10 +114,12 @@ seminara list
 
 Seminara natively exposes its presentation engine across the entire agent ecosystem:
 
+- **Standard Well-Known Discovery:** `https://seminara.online/.well-known/mcp`
 - **Core Product MCP Server:** `https://seminara.online/api/v1/mcp`
 - **Documentation MCP Server:** `https://seminara.online/api/docs/mcp`
 - **OpenAPI 3.1 Spec (ChatGPT / Custom GPTs):** `https://seminara.online/openapi.json`
 - **Discovery Catalog:** `https://seminara.online/.well-known/api-catalog.json`
+- **Interactive Sandbox & Zero-Cost Rehearsals:** `https://seminara.online/sandbox`
 
 ### 1-Click Install via Smithery CLI
 Installs automatically into **Claude Desktop, Cursor, Windsurf, Cline, Zed**, and more:
@@ -165,7 +170,8 @@ If you navigate to `https://seminara.online` using a WebMCP-enabled browser, you
 ## 📖 Documentation & Resources
 - **Developer Documentation**: [https://seminara.online/docs](https://seminara.online/docs)
 - **API Reference**: [https://seminara.online/docs/api-overview](https://seminara.online/docs/api-overview)
-- **OpenAPI 3.1 Spec**: [https://seminara.online/openapi.json](https://seminara.online/openapi.json)
+- **OpenAPI 3.1 Spec Guide**: [https://seminara.online/docs/openapi](https://seminara.online/docs/openapi)
+- **Interactive Sandbox**: [https://seminara.online/sandbox](https://seminara.online/sandbox)
 - **Developer Index (llms.txt)**: [https://seminara.online/llms.txt](https://seminara.online/llms.txt)
 
 ---
