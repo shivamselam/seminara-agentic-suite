@@ -7,7 +7,7 @@
   [![PyPI Package](https://img.shields.io/pypi/v/seminara.svg?color=blue)](https://pypi.org/project/seminara/)
   [![Go Reference](https://pkg.go.dev/badge/github.com/shivamselam/seminara-agentic-suite/go.svg)](https://pkg.go.dev/github.com/shivamselam/seminara-agentic-suite/go)
   [![MCP Compatible](https://img.shields.io/badge/MCP-2026--07--28-emerald.svg)](https://seminara.online/api/v1/mcp)
-  [![smithery badge](https://smithery.ai/badge/seminara/autonomous-host)](https://smithery.ai/servers/seminara/autonomous-host)
+  [![Smithery](https://img.shields.io/badge/Smithery-autonomous--host-FF5722)](https://smithery.ai/servers/seminara/autonomous-host)
   
   <br />
   <a href="https://seminara.online/live/demo"><strong>View Live Interactive Demo »</strong></a>
