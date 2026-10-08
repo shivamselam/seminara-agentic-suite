@@ -7,7 +7,12 @@
     "url": "https://github.com/shivamselam/seminara-agentic-suite",
     "source": "github"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "capabilities": {
+    "tools": {},
+    "resources": {},
+    "prompts": {}
+  },
   "icons": [
     {
       "src": "https://seminara.online/icon.png",

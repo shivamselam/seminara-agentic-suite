@@ -11,4 +11,7 @@ configSchema:
     apiKey:
       type: "string"
       title: "Seminara API Key"
-      description: "Bearer API key (sk_live_...) from https://seminara.online/dashboard/settings (optional for public discovery, required for creating sessions)"
+      description: "Bearer API key (sem_live_...) from https://seminara.online/dashboard/settings or dynamic registration POST https://seminara.online/api/v1/auth/register (optional for public discovery, required for creating sessions)"
+
+exampleConfig:
+  apiKey: "sem_live_sample_agent_token"
