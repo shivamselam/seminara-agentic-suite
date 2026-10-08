@@ -169,6 +169,8 @@ If you navigate to `https://seminara.online` using a WebMCP-enabled browser, you
 
 ## 📖 Documentation & Resources
 - **Developer Documentation**: [https://seminara.online/docs](https://seminara.online/docs)
+- **Personal Agent Protocol (PAP Guide)**: [docs/personal-agent-protocol.md](./docs/personal-agent-protocol.md)
+- **Changelog & Releases**: [CHANGELOG.md](./CHANGELOG.md)
 - **API Reference**: [https://seminara.online/docs/api-overview](https://seminara.online/docs/api-overview)
 - **OpenAPI 3.1 Spec Guide**: [https://seminara.online/docs/openapi](https://seminara.online/docs/openapi)
 - **Interactive Sandbox**: [https://seminara.online/sandbox](https://seminara.online/sandbox)

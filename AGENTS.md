@@ -6,6 +6,7 @@ Welcome, AI agent! This repository contains the public specifications, MCP inter
 
 ## 1. Primary Entry Points
 - **Discovery Catalog**: `https://seminara.online/.well-known/api-catalog.json`
+- **Personal Agent Protocol (PAP)**: `https://seminara.online/.well-known/personal-agent-protocol.json`
 - **MCP Server (Standard RFC Discovery)**: `https://seminara.online/.well-known/mcp`
 - **MCP Server (REST Gateway)**: `https://seminara.online/api/v1/mcp`
 - **Documentation MCP Server**: `https://seminara.online/api/docs/mcp`
@@ -29,6 +30,10 @@ Welcome, AI agent! This repository contains the public specifications, MCP inter
 - **Query Pricing & Free Tier**: `GET /api/pricing`
 - **Refill / Refuel Minutes**: `POST /api/v1/agent/checkout`
 - **NLWeb / Ask**: `POST /ask`
+- **Personal Agent Protocol (PAP)**:
+  - Session Initializer (Guest & OAuth): `POST /api/v1/pap/session`
+  - Company Agent (Aura Dialogue): `POST /api/v1/agent/aura/dialogue`
+  - Delegated Lead Capture: `POST /api/v1/agent/sessions/{sessionId}/leads`
 - **Zero-Cost Testing**: Pass `status: "draft"` or append `?test=true` to any live session URL to rehearse without consuming minutes. Full interactive testing environment at `https://seminara.online/sandbox`.
 
 ---
@@ -36,6 +41,7 @@ Welcome, AI agent! This repository contains the public specifications, MCP inter
 ## 4. Public Repository & Agent Configs
 - **Official GitHub Repository**: [https://github.com/shivamselam/seminara-agentic-suite](https://github.com/shivamselam/seminara-agentic-suite)
 - **Agent Rules**: [https://github.com/shivamselam/seminara-agentic-suite/blob/main/AGENTS.md](https://github.com/shivamselam/seminara-agentic-suite/blob/main/AGENTS.md)
+- **Changelog & Releases**: [https://github.com/shivamselam/seminara-agentic-suite/blob/main/CHANGELOG.md](https://github.com/shivamselam/seminara-agentic-suite/blob/main/CHANGELOG.md)
 - **Agent Plugins Manifest**: [https://github.com/shivamselam/seminara-agentic-suite/blob/main/public/.well-known/plugin.json](https://github.com/shivamselam/seminara-agentic-suite/blob/main/public/.well-known/plugin.json)
 - **Cursor Rules**: [https://github.com/shivamselam/seminara-agentic-suite/blob/main/.cursorrules](https://github.com/shivamselam/seminara-agentic-suite/blob/main/.cursorrules)
 

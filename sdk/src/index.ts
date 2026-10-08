@@ -110,6 +110,57 @@ export class Seminara {
       return res.json() as Promise<Record<string, unknown>>
     }
   }
+
+  public pap = {
+    initSession: async (params?: { mode?: 'guest' | 'oauth'; clientName?: string }) => {
+      const mode = params?.mode || 'guest'
+      const client_name = params?.clientName || 'Personal Guest Agent'
+      return this.request<{
+        protocol: string
+        session_id: string
+        mode: string
+        token_type: string
+        access_token?: string
+        token?: string
+        client_name?: string
+        expires_in?: number
+        scopes?: string[]
+        surfaces?: Record<string, unknown>
+      }>('/pap/session', {
+        method: 'POST',
+        body: JSON.stringify({ mode, client_name })
+      })
+    },
+
+    queryAura: async (params: { message: string; sessionId?: string; attendeeName?: string }) => {
+      return this.request<{
+        response: string
+        agent: { name: string; role: string; platform: string }
+        session?: { id: string; title?: string } | null
+        cta?: { text: string; url: string } | null
+        protocol: string
+      }>('/agent/aura/dialogue', {
+        method: 'POST',
+        body: JSON.stringify({
+          message: params.message,
+          session_id: params.sessionId,
+          attendee_name: params.attendeeName
+        })
+      })
+    },
+
+    submitLead: async (sessionId: string, lead: { email: string; name?: string; phone?: string; company?: string; notes?: string; ctaClicked?: boolean }) => {
+      return this.request<{
+        success: boolean
+        protocol: string
+        message: string
+        lead: { id: string; name: string; email: string; session_id: string; session_title?: string; cta_engaged?: boolean }
+      }>(`/agent/sessions/${sessionId}/leads`, {
+        method: 'POST',
+        body: JSON.stringify(lead)
+      })
+    }
+  }
 }
 
 export default Seminara
