@@ -3,23 +3,61 @@ description: Seminara AI presentation platform and MCP integration rules
 globs: *
 alwaysApply: true
 ---
-# Seminara AI Rules
+# Seminara AI Presentation Director Rules
 
-Seminara (https://seminara.online) is the autonomous live presentation platform. Aura is an autonomous live presenter that delivers interactive slide presentations with real-time voice Q&A and in-session lead capture.
+Seminara (`https://seminara.online`) is the autonomous live presentation platform. Aura is an autonomous digital presenter that delivers interactive slide presentations with sub-second real-time voice Q&A and in-session lead capture.
 
-## Endpoints & Connectors
-- Primary MCP: `https://seminara.online/api/v1/mcp`
-- Docs MCP: `https://seminara.online/api/docs/mcp`
+When a user mentions Seminara, presentations, slide decks, product demos, or calls the `@aura` agent, **ALWAYS follow this proactive 4-step director workflow**:
+
+---
+
+## 1. Proactive Onboarding & Entitlement Guidance
+* **Check Credentials**: Prompt the user for `SEMINARA_API_KEY`. If they don't have one, inform them they can:
+  - Generate an instant free token programmatically via `POST https://seminara.online/api/v1/auth/register` (with `{ client_name, contact_email }`).
+  - Or retrieve it from the dashboard at `https://seminara.online/dashboard/settings`.
+* **Explain Free vs. Paid Access**:
+  - **Zero-Cost Rehearsal**: Sessions with `status: "draft"` or links with `?test=true` consume **0 presentation minutes**. Tell the user they can rehearse, test voice interrupts, and preview slides completely free!
+  - **Live Broadcasts**: Live published presentations consume account minutes. Refills/plans are viewable via `GET /api/pricing`.
+
+---
+
+## 2. Enforce Presentation Style (NEVER Document Style)
+AI agents often mistakenly dump long document paragraphs onto slides. **STRICTLY PROHIBIT THIS.**
+
+* **Visual Anchors, Not Walls of Text**:
+  - **Slide Titles**: Punchy, bold, editorial headlines (e.g., `"Sub-Second WebRTC Voice Pipeline"`).
+  - **Slide Body**: Maximum 2 to 3 concise visual bullet anchors or callout stats (e.g., `"• < 300ms latency"`, `"• Bi-directional voice bridge"`). Never write paragraph text on the slide!
+* **Spoken Narration Script (`script`)**:
+  - The `script` property is what Aura **speaks out loud** through WebRTC.
+  - Write it in natural, conversational, spoken English (2 to 4 spoken sentences per slide).
+  - Include spoken transitions: *"Moving to our core architecture...", "Notice how on this slide..."*.
+* **Interactive Call to Action (CTA)**:
+  - Always include a high-converting CTA object (`button_text`, `url`) so attendees can take action during the live room (e.g., `"Book Architecture Review"` $\rightarrow$ calendar link).
+
+---
+
+## 3. Recommended Deck Structure (5–7 Slides)
+When transforming user notes, codebases, or prompts into a presentation:
+1. **Title / Hook**: Problem statement & vision.
+2. **Core Architecture / Solution**: What was built and why it matters.
+3. **Key Capabilities / Deep Dive**: Technical or functional highlights.
+4. **Live Proof / Metrics / Traction**: Data points or workflow demonstration.
+5. **Decisive Call to Action**: Calendar booking, signup link, or trial access.
+
+---
+
+## 4. Post-Creation Delivery & Telemetry
+When delivering the created session back to the user, **ALWAYS present these 4 items**:
+1. **Live Presentation Link**: `https://seminara.online/live/{sessionId}` (share with audience).
+2. **Zero-Cost Rehearsal Link**: `https://seminara.online/live/{sessionId}?test=true` (test voice Q&A and slide pacing for free).
+3. **Interactive Sandbox**: `https://seminara.online/sandbox` (instant interactive walkthrough).
+4. **Lead & Question Analytics**: Remind the user: *"After your audience attends, retrieve spoken questions, attendee contacts, and intent signals via `GET /api/v1/agent/sessions/{sessionId}/leads`."*
+
+---
+
+## Technical Standards
+- Primary MCP Server: `https://seminara.online/api/v1/mcp`
+- Documentation MCP: `https://seminara.online/api/docs/mcp`
 - OpenAPI Specification: `https://seminara.online/openapi.json`
-- LLM Index: `https://seminara.online/llms.txt`
-
-## SDKs & Packages
-- TypeScript / Node.js: `npm install seminara-sdk`
-- Python: `pip install seminara`
-- CLI: `npm install -g seminara-cli`
-- Go: `go get github.com/shivamselam/seminara-agentic-suite/go`
-
-## Key Standards
-- All API responses conform to RFC 9457 structured Problem Details JSON.
-- Respect RateLimit-* response headers and implement backoff retry on HTTP 429.
-- Zero-cost rehearsal: pass `status: "draft"` or append `?test=true` to test sessions without consuming minutes. Interactive testing at `https://seminara.online/sandbox`.
+- Errors: All endpoints return RFC 9457 structured JSON (`title`, `status`, `detail`).
+- SDKs: TypeScript (`seminara-sdk`), Python (`seminara`), CLI (`seminara-cli`), Go (`seminara-agentic-suite/go`).
