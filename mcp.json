@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "seminara": {
+      "type": "sse",
+      "url": "https://seminara.online/api/v1/mcp"
+    },
+    "seminara-docs": {
+      "type": "sse",
+      "url": "https://seminara.online/api/docs/mcp"
+    }
+  }
+}

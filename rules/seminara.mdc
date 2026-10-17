@@ -1,0 +1,25 @@
+---
+description: Seminara AI presentation platform and MCP integration rules
+globs: *
+alwaysApply: true
+---
+# Seminara AI Rules
+
+Seminara (https://seminara.online) is the autonomous live presentation platform. Aura is an autonomous live presenter that delivers interactive slide presentations with real-time voice Q&A and in-session lead capture.
+
+## Endpoints & Connectors
+- Primary MCP: `https://seminara.online/api/v1/mcp`
+- Docs MCP: `https://seminara.online/api/docs/mcp`
+- OpenAPI Specification: `https://seminara.online/openapi.json`
+- LLM Index: `https://seminara.online/llms.txt`
+
+## SDKs & Packages
+- TypeScript / Node.js: `npm install seminara-sdk`
+- Python: `pip install seminara`
+- CLI: `npm install -g seminara-cli`
+- Go: `go get github.com/shivamselam/seminara-agentic-suite/go`
+
+## Key Standards
+- All API responses conform to RFC 9457 structured Problem Details JSON.
+- Respect RateLimit-* response headers and implement backoff retry on HTTP 429.
+- Zero-cost rehearsal: pass `status: "draft"` or append `?test=true` to test sessions without consuming minutes. Interactive testing at `https://seminara.online/sandbox`.
