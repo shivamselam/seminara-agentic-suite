@@ -8,6 +8,7 @@
   [![Go Reference](https://pkg.go.dev/badge/github.com/shivamselam/seminara-agentic-suite/go.svg)](https://pkg.go.dev/github.com/shivamselam/seminara-agentic-suite/go)
   [![MCP Compatible](https://img.shields.io/badge/MCP-2026--07--28-emerald.svg)](https://seminara.online/api/v1/mcp)
   [![Smithery](https://img.shields.io/badge/Smithery-autonomous--host-FF5722)](https://smithery.ai/servers/seminara/autonomous-host)
+  [![Cursor Directory](https://img.shields.io/badge/Cursor_Directory-seminara--agentic--suite-000000?logo=cursor)](https://cursor.directory/plugins/seminara-agentic-suite)
   
   <br />
   <a href="https://seminara.online/live/demo"><strong>View Live Interactive Demo »</strong></a>
@@ -120,6 +121,12 @@ Seminara natively exposes its presentation engine across the entire agent ecosys
 - **OpenAPI 3.1 Spec (ChatGPT / Custom GPTs):** `https://seminara.online/openapi.json`
 - **Discovery Catalog:** `https://seminara.online/.well-known/api-catalog.json`
 - **Interactive Sandbox & Zero-Cost Rehearsals:** `https://seminara.online/sandbox`
+- **Cursor Directory Plugin:** [`cursor.directory/plugins/seminara-agentic-suite`](https://cursor.directory/plugins/seminara-agentic-suite)
+
+### 1-Click Install via Cursor Directory
+Install the complete plugin package (Aura subagent, rules, skills, and MCP servers) directly from the **[Cursor Directory](https://cursor.directory/plugins/seminara-agentic-suite)**:
+
+[![Install in Cursor](https://img.shields.io/badge/Install_Plugin-Cursor_Directory-000000?style=for-the-badge&logo=cursor)](https://cursor.directory/plugins/seminara-agentic-suite)
 
 ### 1-Click Install via Smithery CLI
 Installs automatically into **Claude Desktop, Cursor, Windsurf, Cline, Zed**, and more:
