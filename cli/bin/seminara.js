@@ -22,12 +22,12 @@ async function main() {
   if (!command || command === 'help' || command === '--help') {
     console.log(`
 Seminara AI CLI (seminara.online)
-Autonomous AI Host for Live Presentations
+Autonomous Presenter for Live Briefings
 
 Commands:
   seminara pricing                 View machine-readable subscription plans and quotas
-  seminara list                    List your presentation sessions
-  seminara create --title <title>  Create a new presentation session
+  seminara list                    List your briefing sessions
+  seminara create --title <title>  Create a new briefing session
 
 Options:
   --key <apiKey>                   Provide Bearer API key (or set SEMINARA_API_KEY)
@@ -62,7 +62,7 @@ Options:
       process.exit(1)
     }
     const titleIdx = args.indexOf('--title')
-    const title = titleIdx !== -1 && args[titleIdx + 1] ? args[titleIdx + 1] : 'Untitled Presentation'
+    const title = titleIdx !== -1 && args[titleIdx + 1] ? args[titleIdx + 1] : 'Untitled Briefing'
     const res = await fetch(`${baseUrl}/agent/sessions`, {
       method: 'POST',
       headers: {

@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Seminara Agentic SDK</h1>
-  <p><strong>Official TypeScript & JavaScript SDK for the Seminara AI Presentation Engine.</strong></p>
+  <p><strong>Official TypeScript & JavaScript SDK for the Seminara AI Briefing Engine.</strong></p>
   
   [![NPM Version](https://img.shields.io/npm/v/seminara-sdk.svg?style=flat-square&color=blue)](https://www.npmjs.com/package/seminara-sdk)
   [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](./LICENSE)
@@ -8,7 +8,7 @@
   [![Documentation](https://img.shields.io/badge/docs-seminara.online-purple.svg?style=flat-square)](https://seminara.online/docs)
   
   <br />
-  <a href="https://seminara.online/live/demo"><strong>View Live Presentation Demo »</strong></a>
+  <a href="https://seminara.online/live/demo"><strong>View Live Briefing Demo »</strong></a>
   ·
   <a href="https://seminara.online/docs/api-overview"><strong>API Reference »</strong></a>
   <br />
@@ -17,9 +17,9 @@
 
 ## Overview
 
-The **Seminara SDK** lets developers and autonomous AI agents programmatically create, manage, and orchestrate live AI-hosted presentation rooms on [Seminara](https://seminara.online). 
+The **Seminara SDK** lets developers and autonomous AI agents programmatically create, manage, and orchestrate live AI-hosted briefing rooms on [Seminara](https://seminara.online). 
 
-Instead of static videos or scheduling human hosts, Seminara's voice engine (**Aura**) delivers interactive, WebRTC-based presentations that synchronize slides and field unscripted audience questions 24/7.
+Instead of static videos or scheduling human hosts, Seminara's voice engine (**Aura**) delivers interactive, WebRTC-based briefings that synchronize slides and field unscripted audience questions 24/7.
 
 ---
 
@@ -48,7 +48,7 @@ const client = new Seminara({
 });
 ```
 
-### 2. Create a Live Presentation Session
+### 2. Create a Live Briefing Session
 Turn a slide deck and knowledge base into an autonomous live room in seconds:
 
 ```typescript
@@ -59,7 +59,7 @@ const session = await client.sessions.create({
   knowledgeBase: [
     {
       title: "Pricing & Plans",
-      content: "Core Host is $199/mo ($179/mo annually) for 50 presentations and 1,400 minutes.",
+      content: "Core Host is $199/mo ($179/mo annually) for 50 briefings and 1,400 minutes.",
     },
     {
       title: "Security & Compliance",

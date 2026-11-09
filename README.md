@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Seminara Agentic Suite</h1>
-  <p><strong>Now your AI agents can autonomously host live presentations for you.</strong></p>
+  <p><strong>Now your AI agents can autonomously host live briefings for you.</strong></p>
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![NPM Package](https://img.shields.io/npm/v/seminara-sdk.svg?color=blue)](https://www.npmjs.com/package/seminara-sdk)
@@ -25,11 +25,11 @@
   <br />
 </div>
 
-## The Presentation Layer for AI Agents
+## The Autonomous Live Briefing Layer for AI Agents
 
-Seminara is an autonomous, 24/7 WebRTC presentation host (Aura) that delivers interactive slide decks and fields live audience Q&A.
+Seminara is an autonomous, 24/7 WebRTC briefing host (Aura) that delivers interactive slide decks and fields live audience voice Q&A.
 
-With the **Seminara Agentic Suite**, this core engine is now fully programmable. You or your autonomous agents can orchestrate live, voice-led presentations entirely through code using our WebMCP integration, CLI, or multi-language SDKs.
+With the **Seminara Agentic Suite**, this core engine is now fully programmable. You or your autonomous agents can orchestrate live, voice-led briefings entirely through code using our WebMCP integration, CLI, or multi-language SDKs.
 
 ---
 
@@ -56,12 +56,12 @@ import { Seminara } from 'seminara-sdk';
 
 const client = new Seminara({ apiKey: process.env.SEMINARA_API_KEY });
 
-// Instantly generate a live, AI-hosted presentation room
+// Instantly generate a live, AI-hosted briefing room
 const session = await client.sessions.create({
   title: "Q3 Enterprise Demo & Discovery",
   pdfUrl: "https://example.com/pitch-deck.pdf",
   knowledgeBase: [
-    { title: "Pricing", content: "Core Host plan is $199/mo for 50 presentations." }
+    { title: "Pricing", content: "Core Host plan is $199/mo for 50 briefings." }
   ],
   ctaText: "Book Architecture Review",
   ctaUrl: "https://seminara.online/book-meeting"
@@ -86,7 +86,7 @@ session = client.create_session(
     is_live=True,
     pdf_url="https://example.com/pitch-deck.pdf",
     knowledge_base=[
-        {"title": "Pricing", "content": "Core Host plan is $199/mo for 50 presentations."}
+        {"title": "Pricing", "content": "Core Host plan is $199/mo for 50 briefings."}
     ],
     cta_text="Book Architecture Review",
     cta_url="https://seminara.online/book-meeting"
@@ -102,7 +102,7 @@ npm install -g seminara-cli
 # Set your API key
 export SEMINARA_API_KEY="sk_live_..."
 
-# Create a presentation room straight from your terminal
+# Create a briefing room straight from your terminal
 seminara create --title "Q3 Product Launch"
 
 # List active rooms
@@ -113,7 +113,7 @@ seminara list
 
 ## 🤖 Model Context Protocol (MCP) & AI Connectors
 
-Seminara natively exposes its presentation engine across the entire agent ecosystem:
+Seminara natively exposes its briefing engine across the entire agent ecosystem:
 
 - **Standard Well-Known Discovery:** `https://seminara.online/.well-known/mcp`
 - **Core Product MCP Server:** `https://seminara.online/api/v1/mcp`
@@ -170,7 +170,7 @@ npx -y @smithery/cli install @seminara/autonomous-host
 3. Under Authentication, select **Bearer** and provide your API key.
 
 #### WebMCP (In-Browser Agents)
-If you navigate to `https://seminara.online` using a WebMCP-enabled browser, your agent will automatically discover the exposed presentation tools on page load.
+If you navigate to `https://seminara.online` using a WebMCP-enabled browser, your agent will automatically discover the exposed briefing tools on page load.
 
 ---
 

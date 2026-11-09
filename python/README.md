@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Seminara Python SDK</h1>
-  <p><strong>Official Python client for the Seminara AI Presentation Engine.</strong></p>
+  <p><strong>Official Python client for the Seminara AI Briefing Engine.</strong></p>
 
   [![PyPI Version](https://img.shields.io/pypi/v/seminara.svg?style=flat-square&color=blue)](https://pypi.org/project/seminara/)
   [![Python Versions](https://img.shields.io/pypi/pyversions/seminara.svg?style=flat-square)](https://pypi.org/project/seminara/)
@@ -8,7 +8,7 @@
   [![MCP Protocol](https://img.shields.io/badge/MCP-Supported-orange.svg?style=flat-square)](https://seminara.online/api/v1/mcp)
   
   <br />
-  <a href="https://seminara.online/live/demo"><strong>View Live Presentation Demo »</strong></a>
+  <a href="https://seminara.online/live/demo"><strong>View Live Briefing Demo »</strong></a>
   ·
   <a href="https://seminara.online/docs/api-overview"><strong>API Reference »</strong></a>
   <br />
@@ -17,7 +17,7 @@
 
 ## Overview
 
-The **Seminara Python SDK** allows developers and autonomous AI agents to programmatically create, manage, and orchestrate live AI-hosted presentations on [Seminara](https://seminara.online).
+The **Seminara Python SDK** allows developers and autonomous AI agents to programmatically create, manage, and orchestrate live AI-hosted briefings on [Seminara](https://seminara.online).
 
 ---
 
@@ -41,7 +41,7 @@ from seminara import SeminaraClient
 client = SeminaraClient(api_key=os.environ.get("SEMINARA_API_KEY"))
 ```
 
-### 2. Create a Live Presentation Session
+### 2. Create a Live Briefing Session
 
 ```python
 session = client.create_session(
@@ -52,7 +52,7 @@ session = client.create_session(
     knowledge_base=[
         {
             "title": "Pricing & Plans",
-            "content": "Core Host is $199/mo ($179/mo annually) for 50 presentations and 1,400 minutes.",
+            "content": "Core Host is $199/mo ($179/mo annually) for 50 briefings and 1,400 minutes.",
         }
     ],
     cta_text="Book an Architecture Review",

@@ -1,6 +1,6 @@
 ---
 name: present
-description: Transform current code, markdown notes, or outlines into an autonomous live presentation room with spoken narration scripts, interactive CTAs, and zero-cost rehearsal links.
+description: Transform current code, markdown notes, or outlines into an autonomous live briefing room with spoken narration scripts, interactive CTAs, and zero-cost rehearsal links.
 ---
 
 # /present Command Workflow
@@ -12,7 +12,7 @@ When the developer invokes `/present`:
    - If missing, offer instant dynamic registration via `POST https://seminara.online/api/v1/auth/register` or the dashboard.
    - Ask: *"Would you like to generate this in zero-cost rehearsal mode (`status: 'draft'`, consumes 0 minutes) or publish it live?"*
 
-2. **Presentation Style Transformation (NEVER Document Style)**:
+2. **Briefing Style Transformation (NEVER Document Style)**:
    - **Slide Titles**: Bold, editorial headlines (max 6–8 words).
    - **Visual Content**: Max 2–3 visual bullet points or bold metrics. No paragraph walls.
    - **Spoken Script (`script`)**: 2–4 sentences of conversational spoken narration written specifically for Aura to speak aloud via WebRTC.

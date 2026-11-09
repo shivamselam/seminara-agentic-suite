@@ -1,6 +1,6 @@
 /**
  * Official TypeScript & JavaScript SDK for Seminara AI (seminara.online)
- * Autonomous AI Host for Live Presentations, Demos & Onboarding.
+ * Autonomous Presenter for Live Briefings, Demos & Onboarding.
  */
 
 declare const process: { env?: Record<string, string | undefined> } | undefined

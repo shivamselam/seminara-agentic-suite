@@ -24,7 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - **Initial Public Release of Seminara Agentic Suite**:
-  - **TypeScript / JavaScript SDK (`seminara-sdk@1.0.0`)**: Client bindings for presentation session provisioning, slide management, analytics querying, and lead exporting.
+  - **TypeScript / JavaScript SDK (`seminara-sdk@1.0.0`)**: Client bindings for briefing session provisioning, slide management, analytics querying, and lead exporting.
   - **Python SDK (`seminara@1.0.0`)**: Synchronous and asynchronous Python client supporting modern Pydantic validation.
   - **Command-Line Interface (`seminara-cli@1.0.0`)**: Terminal tool and local stdio Model Context Protocol (MCP) server bridge.
   - **Go Module (`pkg.go.dev/github.com/shivamselam/seminara-agentic-suite/go`)**: Strongly-typed Go client for backend agent runtimes.

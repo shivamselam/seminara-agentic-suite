@@ -1,7 +1,7 @@
 {
   "name": "seminara-cli",
   "version": "1.0.0",
-  "description": "Official Command-Line Interface for Seminara AI interactive presentation platform (seminara.online)",
+  "description": "Official Command-Line Interface for Seminara AI interactive briefing platform (seminara.online)",
   "bin": {
     "seminara": "./bin/seminara.js"
   },
@@ -14,7 +14,7 @@
     "seminara",
     "cli",
     "ai-presenter",
-    "presentations",
+    "briefings",
     "terminal"
   ],
   "license": "MIT",

@@ -2,7 +2,7 @@
 
 Welcome to the **Personal Agent Protocol (PAP)** developer guide for **Seminara** (`https://seminara.online`).
 
-Seminara is **The Autonomous Live Presentation Platform**. **Aura** is the autonomous live presenter that turns slide decks into live, interactive presentations with real-time voice and text Q&A and in-session lead conversion.
+Seminara is **The Autonomous Live Briefing Platform**. **Aura** is the autonomous live presenter that turns slide decks into live, interactive briefings with real-time voice and text Q&A and in-session lead conversion.
 
 This document outlines how consumer personal AI agents (such as Meta AI, Claude, Siri, and custom agent runtimes) discover Seminara, establish guest or delegated sessions, interact with Aura (Company Agent), and submit attendee leads with verified user consent.
 
@@ -86,7 +86,7 @@ When the consumer wants their personal agent to act with full account authority 
 Personal Agent Protocol defines three distinct business surfaces:
 
 ### Surface 1: Company Agent (Aura Dialogue)
-For interactive conversations, slide queries, and presentation Q&A without requiring WebRTC audio streaming:
+For interactive conversations, slide queries, and briefing Q&A without requiring WebRTC audio streaming:
 
 ```http
 POST https://seminara.online/api/v1/agent/aura/dialogue
@@ -106,7 +106,7 @@ Response:
   "response": "On Slide 2, we highlight sub-second barge-in interruption handling and autonomous slide synchronization...",
   "agent": {
     "name": "Aura",
-    "role": "Autonomous Presentation Host",
+    "role": "Autonomous Live Presenter",
     "platform": "Seminara"
   },
   "session": {
@@ -125,7 +125,7 @@ Response:
 
 ### Surface 2: Structured APIs (MCP & OpenAPI)
 Personal agents can connect over Model Context Protocol (Streamable HTTP SSE) at `https://seminara.online/api/v1/mcp`:
-- `pap_query_aura`: Query presentation outlines and ask Aura questions.
+- `pap_query_aura`: Query briefing outlines and ask Aura questions.
 - `submit_attendee_lead`: Register attendee interest and click CTAs.
 - `discover_sessions`: Browse public live rooms on Seminara Discover.
 
@@ -142,7 +142,7 @@ Content-Type: application/json
   "email": "jane@example.com",
   "company": "Acme Corp",
   "phone": "+1-555-0199",
-  "notes": "Interested in 50 concurrent presentation rooms",
+  "notes": "Interested in 50 concurrent briefing rooms",
   "cta_clicked": true
 }
 ```
@@ -182,10 +182,10 @@ const session = await client.pap.initSession({
 
 console.log('Guest session active:', session.access_token);
 
-// 2. Query Aura about a presentation
+// 2. Query Aura about a briefing
 const auraReply = await client.pap.queryAura({
   sessionId: '3fa85f64-5717-4562-b3fc-2c963f66afa6',
-  message: 'What is the pricing model shown in the presentation?'
+  message: 'What is the pricing model shown in the briefing?'
 });
 
 console.log('Aura:', auraReply.response);

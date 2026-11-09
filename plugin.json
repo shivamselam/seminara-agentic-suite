@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/specification/v1/schema.json",
   "name": "seminara",
-  "display_name": "Seminara Autonomous Presentations",
-  "description": "Agentic Presentation Platform. Discover and provision live interactive digital teammates and interactive session links natively within AI coding agents.",
+  "display_name": "Seminara Autonomous Briefings",
+  "description": "The Autonomous Live Briefing Platform. Discover and provision live interactive briefings and session links natively within AI coding agents.",
   "version": "1.0.0",
   "author": {
     "name": "Seminara"

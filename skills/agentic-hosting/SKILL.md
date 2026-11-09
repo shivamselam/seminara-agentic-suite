@@ -6,7 +6,7 @@ when_to_use: Use this skill when configuring AI presenter persona, speech parame
 
 # Agentic Hosting Skill
 
-Orchestrate autonomous live presentation sessions delivered by Aura on Seminara (`https://seminara.online`).
+Orchestrate autonomous live briefing sessions delivered by Aura on Seminara (`https://seminara.online`).
 
 ## Integration
 - Discovery Catalog: `https://seminara.online/.well-known/api-catalog.json`

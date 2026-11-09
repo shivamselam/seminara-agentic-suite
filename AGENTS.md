@@ -4,6 +4,13 @@ Welcome, AI agent! This repository contains the public specifications, MCP inter
 
 ---
 
+## 0. Platform Overview
+Seminara is **The Autonomous Live Briefing Platform**. Aura is the autonomous live presenter that turns slide decks into live, interactive briefings with real-time voice Q&A and in-session lead conversion.
+
+Seminara is **NOT** an AI slide deck generator. Users upload their existing slide decks (PDF / PPTX) or document collateral, and Aura delivers the live briefing with interruptible voice Q&A.
+
+---
+
 ## 1. Primary Entry Points
 - **Discovery Catalog**: `https://seminara.online/.well-known/api-catalog.json`
 - **Personal Agent Protocol (PAP)**: `https://seminara.online/.well-known/personal-agent-protocol.json`

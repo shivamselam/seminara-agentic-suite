@@ -1,6 +1,6 @@
 ---
 name: session-analytics
-description: Retrieve audience engagement metrics, Q&A logs, and conversion lead captures from live presentation sessions.
+description: Retrieve audience engagement metrics, Q&A logs, and conversion lead captures from live briefing sessions.
 when-to-use: Use when an agent needs structured post-session analytics, attendee question transcripts, or intent signals.
 ---
 

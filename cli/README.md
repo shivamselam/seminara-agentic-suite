@@ -1,12 +1,12 @@
 <div align="center">
   <h1>Seminara CLI</h1>
-  <p><strong>Command-line interface for the Seminara AI Presentation Engine.</strong></p>
+  <p><strong>Command-line interface for the Seminara AI Briefing Engine.</strong></p>
 
   [![NPM Version](https://img.shields.io/npm/v/seminara-cli.svg?style=flat-square&color=blue)](https://www.npmjs.com/package/seminara-cli)
   [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](./LICENSE)
   
   <br />
-  <a href="https://seminara.online/live/demo"><strong>View Live Presentation Demo »</strong></a>
+  <a href="https://seminara.online/live/demo"><strong>View Live Briefing Demo »</strong></a>
   ·
   <a href="https://seminara.online/docs/api-overview"><strong>API Reference »</strong></a>
   <br />
@@ -15,7 +15,7 @@
 
 ## Overview
 
-The **Seminara CLI** (`seminara`) lets you orchestrate autonomous AI presentation sessions directly from your terminal or CI/CD pipelines.
+The **Seminara CLI** (`seminara`) lets you orchestrate autonomous live briefing sessions directly from your terminal or CI/CD pipelines.
 
 ---
 

@@ -1,14 +1,14 @@
 ---
 name: presentation-creation
-description: Transform raw notes, markdown, or code into live interactive presentation decks with spoken narration scripts, interactive CTAs, and zero-cost rehearsal links.
-when_to_use: Use this skill whenever creating a live presentation, designing slides, generating spoken narration scripts for Aura, or setting up session links.
+description: Transform raw notes, markdown, or code into live interactive briefing decks with spoken narration scripts, interactive CTAs, and zero-cost rehearsal links.
+when_to_use: Use this skill whenever creating a live briefing, structuring slides, generating spoken narration scripts for Aura, or setting up briefing links.
 ---
 
-# Presentation Creation Skill
+# Briefing Creation Skill
 
-Seminara (`https://seminara.online`) provisions autonomous live presentations where AI presenter Aura delivers slides and answers audience voice questions in real time.
+Seminara (`https://seminara.online`) provisions autonomous live briefings where AI presenter Aura delivers slides and answers audience voice questions in real time.
 
-## Slide Transformation Rules (Presentation Style vs. Doc Style)
+## Slide Transformation Rules (Briefing Style vs. Doc Style)
 
 * **NEVER dump document paragraphs into slides.**
 * **Slide Structure**:
