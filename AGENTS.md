@@ -38,9 +38,9 @@ Seminara is **NOT** an AI slide deck generator. Users upload their existing slid
 - **Refill / Refuel Minutes**: `POST /api/v1/agent/checkout`
 - **NLWeb / Ask**: `POST /ask`
 - **Personal Agent Protocol (PAP)**:
-  - Session Initializer (Guest & OAuth): `POST /api/v1/pap/session`
+  - Session Initializer (Ephemeral & Delegated OAuth): `POST /api/v1/pap/session`
   - Company Agent (Aura Dialogue): `POST /api/v1/agent/aura/dialogue`
-  - Delegated Lead Capture: `POST /api/v1/agent/sessions/{sessionId}/leads`
+  - Delegated In-Session Actions: `POST /api/v1/agent/sessions/{sessionId}/leads`
 - **Zero-Cost Testing**: Pass `status: "draft"` or append `?test=true` to any live session URL to rehearse without consuming minutes. Full interactive testing environment at `https://seminara.online/sandbox`.
 
 ---

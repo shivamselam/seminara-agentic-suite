@@ -28,8 +28,8 @@ Personal agents begin on the website by discovering machine-readable capabilitie
 
 Personal Agent Protocol supports two operating modes:
 
-### Mode A: Ephemeral Guest Session (Zero Friction)
-When a consumer has not yet logged in or linked an account, the personal agent can initialize an ephemeral **Guest Session** (valid for 1 hour / 3600s TTL). This enables read-only slide inspection, public Q&A with Aura, and attendee interactions.
+### Mode A: Ephemeral Ingestion Session (Zero Friction)
+When an external agent queries a public briefing on behalf of a user without account credentials, it initializes an ephemeral **Query Session** (valid for 1 hour / 3600s TTL). Agents do not sit through timed live audio playback like human spectators; they ingest slide outlines, query Aura machine-to-machine for instant Q&A takeaways, and inspect active CTAs.
 
 ```http
 POST https://seminara.online/api/v1/pap/session
@@ -129,8 +129,8 @@ Personal agents can connect over Model Context Protocol (Streamable HTTP SSE) at
 - `submit_attendee_lead`: Register attendee interest and click CTAs.
 - `discover_sessions`: Browse public live rooms on Seminara Discover.
 
-### Surface 3: Delegated Attendee Lead Capture
-When an attendee approves sharing their contact details or clicking an in-session Call-To-Action (CTA):
+### Surface 3: Delegated In-Session Actions & Lead Conversion
+When a user instructs their agent to accept an offer, schedule a demo, or share contact details from a briefing:
 
 ```http
 POST https://seminara.online/api/v1/agent/sessions/{sessionId}/leads
