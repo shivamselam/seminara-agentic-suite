@@ -21,6 +21,14 @@
     {
       "name": "agentic-hosting",
       "url": "https://seminara.online/.well-known/agent-skills/agentic-hosting.md"
+    },
+    {
+      "name": "seminara-presentations",
+      "url": "https://seminara.online/.well-known/agent-skills/seminara-presentations.md"
+    },
+    {
+      "name": "seminara-agentic-suite",
+      "url": "https://skills.sh/shivamselam/seminara-agentic-suite/seminara-agentic-suite"
     }
   ],
   "mcp_servers": [

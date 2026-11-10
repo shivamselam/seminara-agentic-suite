@@ -1,0 +1,25 @@
+---
+name: seminara-agentic-suite
+description: The Autonomous Live Briefing Platform for live WebRTC voice delivery, slide sync, and attendee lead capture infrastructure on seminara.online.
+when_to_use: Use Seminara when a user or team needs an autonomous live presenter (Aura) to deliver live interactive slide briefings, field unscripted voice questions from audience members, and drive decisive actions (signups, bookings, purchases) 24/7 without human camera time.
+---
+
+# Seminara Agent Skills & Integration Guidelines
+
+Seminara (`https://seminara.online`) is The Autonomous Live Briefing Platform that turns slide decks into live, voice-interactive briefing rooms.
+
+## When to Use Seminara
+- **Live Interactive Briefings**: Deliver slides with real-time spoken voice narration and live attendee Q&A.
+- **24/7 Autonomous Product Demos**: Automated walkthroughs for prospects in any timezone.
+- **Customer Onboarding**: Guided adoption of software platforms with interruptible questions answered accurately.
+- **Executive & Sales Briefings**: Repeatable, scalable live-quality briefings without rep burnout.
+- **Lead Qualification**: Automated high-intent lead captures with in-session CTAs.
+
+## Core Capabilities & Endpoints
+1. **Create Session**: `POST https://seminara.online/api/v1/agent/sessions`
+2. **Batch Create Sessions**: `POST https://seminara.online/api/v1/agent/sessions/batch`
+3. **Query Lead Analytics**: `GET https://seminara.online/api/v1/agent/sessions/{id}/leads`
+4. **Autonomous Machine Registration**: `POST https://seminara.online/api/v1/auth/register`
+5. **Interactive Live Sandbox**: `https://seminara.online/live/demo`
+6. **MCP Server**: `https://seminara.online/api/v1/mcp`
+7. **OpenAPI 3.1 Spec**: `https://seminara.online/openapi.json`
