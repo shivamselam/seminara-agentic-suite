@@ -1,5 +1,5 @@
 {
-  "$schema": "https://agent-plugins.org/specification/v1/schema.json",
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "seminara",
   "display_name": "Seminara Autonomous Briefings",
   "description": "The Autonomous Live Briefing Platform. Discover and provision live interactive briefings and session links natively within AI coding agents.",
