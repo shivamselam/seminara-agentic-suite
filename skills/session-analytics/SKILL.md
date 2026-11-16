@@ -13,7 +13,7 @@ Access telemetry, live spoken attendee questions, and lead qualification data ca
    - Endpoint: `GET https://seminara.online/api/v1/agent/sessions/{sessionId}/leads`
    - Returns:
      - `leads`: Array of captured attendee emails, names, and companies.
-     - `questions`: Real-time spoken questions asked by attendees during Aura's live briefing, along with timestamps and Aura's spoken answers.
+     - `questions`: Real-time spoken questions asked by attendees during the live briefing, along with timestamps and spoken answers.
      - `cta_clicks`: Attendees who engaged with the in-session action button (e.g. booked calls, signups).
 2. **Session Configuration & Rehearsal Link**:
    - Endpoint: `GET https://seminara.online/api/v1/agent/sessions/{sessionId}`

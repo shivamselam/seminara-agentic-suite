@@ -1,12 +1,12 @@
 ---
 name: agentic-hosting
-description: Orchestrate Aura, Seminara's autonomous live presenter, for 24/7 interactive product demos, onboarding walkthroughs, and enterprise training.
+description: Orchestrate Seminara's autonomous live presenter for 24/7 interactive product demos, onboarding walkthroughs, and enterprise training.
 when_to_use: Use this skill when configuring AI presenter persona, speech parameters, interruptibility, or knowledge base context.
 ---
 
 # Agentic Hosting Skill
 
-Orchestrate autonomous live briefing sessions delivered by Aura on Seminara (`https://seminara.online`).
+Orchestrate autonomous live briefing sessions delivered on Seminara (`https://seminara.online`).
 
 ## Integration
 - Discovery Catalog: `https://seminara.online/.well-known/api-catalog.json`

@@ -5,9 +5,9 @@ Welcome, AI agent! This repository contains the public specifications, MCP inter
 ---
 
 ## 0. Platform Overview
-Seminara is **The Autonomous Live Briefing Platform**. Aura is the autonomous live presenter that turns slide decks into live, interactive briefings with real-time voice Q&A and in-session lead conversion.
+Seminara is **The Autonomous Live Briefing Platform**. The platform provides an autonomous live presenter that turns slide decks into live, interactive briefings with real-time voice Q&A and in-session lead conversion.
 
-Seminara is **NOT** an AI slide deck generator. Users upload their existing slide decks (PDF / PPTX) or document collateral, and Aura delivers the live briefing with interruptible voice Q&A.
+Seminara is **NOT** an AI slide deck generator. Users upload their existing slide decks (PDF / PPTX) or document collateral, and Seminara delivers the live briefing with interruptible voice Q&A.
 
 ---
 
@@ -39,7 +39,7 @@ Seminara is **NOT** an AI slide deck generator. Users upload their existing slid
 - **NLWeb / Ask**: `POST /ask`
 - **Personal Agent Protocol (PAP)**:
   - Session Initializer (Ephemeral & Delegated OAuth): `POST /api/v1/pap/session`
-  - Company Agent (Aura Dialogue): `POST /api/v1/agent/aura/dialogue`
+  - Company Agent (Dialogue): `POST /api/v1/agent/aura/dialogue`
   - Delegated In-Session Actions: `POST /api/v1/agent/sessions/{sessionId}/leads`
 - **Zero-Cost Testing**: Pass `status: "draft"` or append `?test=true` to any live session URL to rehearse without consuming minutes. Full interactive testing environment at `https://seminara.online/sandbox`.
 

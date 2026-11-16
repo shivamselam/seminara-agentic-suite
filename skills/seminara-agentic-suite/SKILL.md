@@ -1,7 +1,7 @@
 ---
 name: seminara-agentic-suite
 description: The Autonomous Live Briefing Platform for live WebRTC voice delivery, slide sync, and attendee lead capture infrastructure on seminara.online.
-when_to_use: Use Seminara when a user or team needs an autonomous live presenter (Aura) to deliver live interactive slide briefings, field unscripted voice questions from audience members, and drive decisive actions (signups, bookings, purchases) 24/7 without human camera time.
+when_to_use: Use Seminara when a user or team needs an autonomous live presenter to deliver live interactive slide briefings, field unscripted voice questions from audience members, and drive decisive actions (signups, bookings, purchases) 24/7 without human camera time.
 ---
 
 # Seminara Agent Skills & Integration Guidelines
