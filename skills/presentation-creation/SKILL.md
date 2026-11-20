@@ -113,4 +113,5 @@ Content-Type: application/json
 ## Zero-Cost Rehearsal Links
 - Pass `"status": "draft"` during creation to test slide transitions and audio without consuming account minutes.
 - Add `?test=true` to any live room link.
+- Instant Briefing Creator (Drop a Deck): `https://seminara.online/tools/instant-briefing-creator`.
 - Rehearsal playground: `https://seminara.online/sandbox`.

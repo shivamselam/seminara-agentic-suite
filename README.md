@@ -12,9 +12,9 @@
   [![Cursor Directory](https://img.shields.io/badge/Cursor_Directory-seminara--agentic--suite-000000?logo=cursor)](https://cursor.directory/plugins/seminara-agentic-suite)
   
   <br />
-  <a href="https://seminara.online/live/demo"><strong>View Live Interactive Demo »</strong></a>
+  <a href="https://seminara.online/live/demo"><strong>View Live Room Demo »</strong></a>
   ·
-  <a href="https://seminara.online/sandbox"><strong>Interactive Sandbox »</strong></a>
+  <a href="https://seminara.online/tools/instant-briefing-creator"><strong>Instant Briefing Creator »</strong></a>
   ·
   <a href="https://seminara.online/docs/api-overview"><strong>API Reference »</strong></a>
   ·
@@ -202,6 +202,7 @@ If you navigate to `https://seminara.online` using a WebMCP-enabled browser, you
 - **Changelog & Releases**: [CHANGELOG.md](./CHANGELOG.md)
 - **API Reference**: [https://seminara.online/docs/api-overview](https://seminara.online/docs/api-overview)
 - **OpenAPI 3.1 Spec Guide**: [https://seminara.online/docs/openapi](https://seminara.online/docs/openapi)
+- **Instant Briefing Creator (Drop a Deck)**: [https://seminara.online/tools/instant-briefing-creator](https://seminara.online/tools/instant-briefing-creator)
 - **Interactive Sandbox**: [https://seminara.online/sandbox](https://seminara.online/sandbox)
 - **Developer Index (llms.txt)**: [https://seminara.online/llms.txt](https://seminara.online/llms.txt)
 
