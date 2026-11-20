@@ -3,6 +3,7 @@
   <p><strong>Now your AI agents can autonomously host live briefings for you.</strong></p>
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![skills.sh](https://img.shields.io/badge/skills.sh-seminara--agentic--suite-blueviolet.svg)](https://skills.sh/shivamselam/seminara-agentic-suite)
   [![NPM Package](https://img.shields.io/npm/v/seminara-sdk.svg?color=blue)](https://www.npmjs.com/package/seminara-sdk)
   [![PyPI Package](https://img.shields.io/pypi/v/seminara.svg?color=blue)](https://pypi.org/project/seminara/)
   [![Go Reference](https://pkg.go.dev/badge/github.com/shivamselam/seminara-agentic-suite/go.svg)](https://pkg.go.dev/github.com/shivamselam/seminara-agentic-suite/go)
@@ -29,18 +30,38 @@
 
 Seminara is an autonomous, 24/7 WebRTC briefing host (Aura) that delivers interactive slide decks and fields live audience voice Q&A.
 
-With the **Seminara Agentic Suite**, this core engine is now fully programmable. You or your autonomous agents can orchestrate live, voice-led briefings entirely through code using our WebMCP integration, CLI, or multi-language SDKs.
+With the **Seminara Agentic Suite**, this core engine is fully programmable. You or your autonomous agents can orchestrate live, voice-led briefings entirely through code using our standard Agent Skills, WebMCP integration, CLI, or multi-language SDKs.
 
 ---
 
-## 📦 Available Packages & Tools
+## 📦 Available Packages, Skills & Tools
 
-| Package / Tool | Language | Directory | Installation |
+| Package / Tool | Type | Directory | Installation |
 | :--- | :--- | :--- | :--- |
+| **`skills.sh`** | Agent Skills (Claude, Cursor, Antigravity) | [`skills/`](./skills) | `npx skills add shivamselam/seminara-agentic-suite` |
 | **`seminara-sdk`** | TypeScript / JavaScript | [`sdk/`](./sdk) | `npm install seminara-sdk` |
 | **`seminara`** | Python 3.9+ | [`python/`](./python) | `pip install seminara` |
 | **`seminara-cli`** | Command Line CLI | [`cli/`](./cli) | `npm install -g seminara-cli` |
 | **`go`** | Go 1.21+ | [`go/`](./go) | `go get github.com/shivamselam/seminara-agentic-suite/go` <br /> [![Go Reference](https://pkg.go.dev/badge/github.com/shivamselam/seminara-agentic-suite/go.svg)](https://pkg.go.dev/github.com/shivamselam/seminara-agentic-suite/go) |
+
+---
+
+## 🧠 Agent Skills (skills.sh, Claude Code, Cursor, Windsurf, Antigravity)
+
+Seminara provides standard Agent Skills compatible with `skills.sh`, Claude Code, Cursor, Windsurf, Cline, and Antigravity. Install all skills in a single command:
+
+```bash
+npx skills add shivamselam/seminara-agentic-suite
+```
+
+### Skills Catalog in this Repository
+
+| Skill | Description | Direct Installation Command |
+| :--- | :--- | :--- |
+| **`seminara-agentic-suite`** | Flagship master skill: full discovery catalog, session provisioning, and lead conversion workflows. | `npx skills add shivamselam/seminara-agentic-suite` |
+| **`agentic-hosting`** | Orchestrate autonomous live presenter persona, sub-second voice interruptibility, and grounded Q&A. | `npx skills add shivamselam/seminara-agentic-suite/agentic-hosting` |
+| **`presentation-creation`** | Transform notes, documents, and slides into voice-interactive briefings with scripted presenter audio and CTAs. | `npx skills add shivamselam/seminara-agentic-suite/presentation-creation` |
+| **`session-analytics`** | Query live audience engagement duration, spoken question transcripts, and captured attendee leads. | `npx skills add shivamselam/seminara-agentic-suite/session-analytics` |
 
 ---
 
@@ -122,6 +143,7 @@ Seminara natively exposes its briefing engine across the entire agent ecosystem:
 - **Discovery Catalog:** `https://seminara.online/.well-known/api-catalog.json`
 - **Interactive Sandbox & Zero-Cost Rehearsals:** `https://seminara.online/sandbox`
 - **Cursor Directory Plugin:** [`cursor.directory/plugins/seminara-agentic-suite`](https://cursor.directory/plugins/seminara-agentic-suite)
+- **skills.sh Registry:** [`skills.sh/shivamselam/seminara-agentic-suite`](https://skills.sh/shivamselam/seminara-agentic-suite)
 
 ### 1-Click Install via Cursor Directory
 Install the complete plugin package (Aura subagent, rules, skills, and MCP servers) directly from the **[Cursor Directory](https://cursor.directory/plugins/seminara-agentic-suite)**:
@@ -165,7 +187,7 @@ npx -y @smithery/cli install @seminara/autonomous-host
 ```
 
 #### ChatGPT / OpenAI Custom GPTs (Actions)
-1. In your GPT configuration, go to **Actions** → **Create new action**.
+1. In your GPT configuration, go to **Actions** -> **Create new action**.
 2. Click **Import from URL** and paste: `https://seminara.online/openapi.json`
 3. Under Authentication, select **Bearer** and provide your API key.
 
