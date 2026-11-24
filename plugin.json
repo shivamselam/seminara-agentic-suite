@@ -1,42 +1,36 @@
 {
-  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "seminara",
-  "display_name": "Seminara Autonomous Briefings",
-  "description": "The Autonomous Live Briefing Platform. Discover and provision live interactive briefings and session links natively within AI coding agents.",
-  "version": "1.0.0",
+  "displayName": "Seminara",
+  "version": "1.1.0",
+  "description": "The Autonomous Live Briefing Platform. Turn slide decks into live interactive briefings with sub-second WebRTC voice Q&A and in-session lead capture.",
+  "logo": "assets/icon.png",
+  "suggestedPrompts": [
+    "Create a 5-slide live briefing deck with spoken narration and booking CTA",
+    "Generate zero-cost rehearsal link to test presenter voice interrupts",
+    "Retrieve audience question transcripts and captured leads from my session"
+  ],
+  "category": "Developer Tools",
   "author": {
-    "name": "Seminara"
+    "name": "Seminara",
+    "url": "https://seminara.online"
   },
   "homepage": "https://seminara.online",
   "repository": "https://github.com/shivamselam/seminara-agentic-suite",
-  "skills": [
-    {
-      "name": "presentation-creation",
-      "url": "https://seminara.online/.well-known/agent-skills/presentation-creation.md"
-    },
-    {
-      "name": "session-analytics",
-      "url": "https://seminara.online/.well-known/agent-skills/session-analytics.md"
-    },
-    {
-      "name": "agentic-hosting",
-      "url": "https://seminara.online/.well-known/agent-skills/agentic-hosting.md"
-    },
-    {
-      "name": "seminara-agentic-suite",
-      "url": "https://skills.sh/shivamselam/seminara-agentic-suite/seminara-agentic-suite"
-    }
+  "license": "Apache-2.0",
+  "keywords": [
+    "seminara",
+    "voice-agent",
+    "briefings",
+    "mcp",
+    "presentation",
+    "lead-conversion"
   ],
-  "mcp_servers": [
-    {
-      "name": "seminara-product",
-      "url": "https://seminara.online/api/v1/mcp",
-      "transport": "streamable-http"
-    },
-    {
-      "name": "seminara-docs",
-      "url": "https://seminara.online/api/docs/mcp",
-      "transport": "streamable-http"
-    }
+  "skills": [
+    "./skills/agentic-hosting",
+    "./skills/presentation-creation",
+    "./skills/session-analytics",
+    "./skills/seminara-agentic-suite",
+    "./skills/present"
   ]
 }

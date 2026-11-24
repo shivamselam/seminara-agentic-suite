@@ -39,6 +39,8 @@ With the **Seminara Agentic Suite**, this core engine is fully programmable. You
 | Package / Tool | Type | Directory | Installation |
 | :--- | :--- | :--- | :--- |
 | **`skills.sh`** | Agent Skills (Claude, Cursor, Antigravity) | [`skills/`](./skills) | `npx skills add shivamselam/seminara-agentic-suite` |
+| **`antigravity`** | Google Antigravity Plugin | [`.`](./) | `agy plugin install github:shivamselam/seminara-agentic-suite` |
+| **`cursor`** | Cursor Marketplace Plugin | [`./.cursor-plugin`](./.cursor-plugin) | Install from Cursor Marketplace or `cursor.directory` |
 | **`seminara-sdk`** | TypeScript / JavaScript | [`sdk/`](./sdk) | `npm install seminara-sdk` |
 | **`seminara`** | Python 3.9+ | [`python/`](./python) | `pip install seminara` |
 | **`seminara-cli`** | Command Line CLI | [`cli/`](./cli) | `npm install -g seminara-cli` |
@@ -144,6 +146,12 @@ Seminara natively exposes its briefing engine across the entire agent ecosystem:
 - **Interactive Sandbox & Zero-Cost Rehearsals:** `https://seminara.online/sandbox`
 - **Cursor Directory Plugin:** [`cursor.directory/plugins/seminara-agentic-suite`](https://cursor.directory/plugins/seminara-agentic-suite)
 - **skills.sh Registry:** [`skills.sh/shivamselam/seminara-agentic-suite`](https://skills.sh/shivamselam/seminara-agentic-suite)
+
+### 1-Click Install via Google Antigravity CLI
+Install the complete plugin package (skills, subagent, rules, and MCP servers) into Google Antigravity:
+```bash
+agy plugin install github:shivamselam/seminara-agentic-suite
+```
 
 ### 1-Click Install via Cursor Directory
 Install the complete plugin package (Aura subagent, rules, skills, and MCP servers) directly from the **[Cursor Directory](https://cursor.directory/plugins/seminara-agentic-suite)**:

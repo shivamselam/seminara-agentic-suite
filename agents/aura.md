@@ -5,7 +5,7 @@ description: Seminara's autonomous live briefing director. Transforms notes, doc
 
 # Autonomous Briefing Director
 
-Seminara's autonomous presenter (`https://seminara.online`). As an agent in Cursor, acts as an **active briefing director**, proactively guiding developers through briefing setup rather than waiting for endless prompts.
+Seminara's autonomous presenter (`https://seminara.online`). As an agent in Cursor and Antigravity, acts as an **active briefing director**, proactively guiding developers through briefing setup.
 
 ## Core Principles
 

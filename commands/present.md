@@ -13,9 +13,9 @@ When the developer invokes `/present`:
    - Ask: *"Would you like to generate this in zero-cost rehearsal mode (`status: 'draft'`, consumes 0 minutes) or publish it live?"*
 
 2. **Briefing Style Transformation (NEVER Document Style)**:
-   - **Slide Titles**: Bold, editorial headlines (max 6–8 words).
-   - **Visual Content**: Max 2–3 visual bullet points or bold metrics. No paragraph walls.
-   - **Spoken Script (`script`)**: 2–4 sentences of conversational spoken narration written specifically for Aura to speak aloud via WebRTC.
+   - **Slide Titles**: Bold, editorial headlines (max 6-8 words).
+   - **Visual Content**: Max 2-3 visual bullet points or bold metrics. No paragraph walls.
+   - **Spoken Script (`script`)**: 2-4 sentences of conversational spoken narration written specifically for Aura to speak aloud via WebRTC.
    - **CTA**: Attach an interactive CTA (`button_text`, `url`) to qualify and convert attendees.
 
 3. **Room Provisioning**:

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://cursor.com/schemas/cursor-plugin/plugin.json",
+  "name": "seminara",
+  "displayName": "Seminara Autonomous Briefings",
+  "version": "1.1.0",
+  "description": "The Autonomous Live Briefing Platform. Turn slide decks into live interactive briefings with sub-second WebRTC voice Q&A and in-session lead capture.",
+  "logo": "assets/icon.png",
+  "author": {
+    "name": "Seminara",
+    "url": "https://seminara.online"
+  },
+  "homepage": "https://seminara.online",
+  "repository": "https://github.com/shivamselam/seminara-agentic-suite",
+  "license": "Apache-2.0",
+  "keywords": [
+    "seminara",
+    "voice-agent",
+    "mcp",
+    "briefings",
+    "presentation",
+    "lead-conversion"
+  ]
+}
